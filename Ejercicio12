@@ -1,0 +1,27 @@
+package javaapplication3;
+import java.util.Scanner;
+
+public class JavaApplication3 {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        double horas_trabajadas, valor_hora, retencion, salario_bruto, salario_neto;
+        Scanner teclado = new Scanner(System.in);
+        
+        System.out.println("Horas trabajadas:");
+        horas_trabajadas = teclado.nextDouble();
+        
+        System.out.println("Valor de Horas:");
+        valor_hora = teclado.nextDouble();
+        
+        retencion = (12.5)/100;
+        salario_bruto = horas_trabajadas * valor_hora;
+        salario_neto = salario_bruto - (salario_bruto*retencion);
+        
+        System.out.println("El salario bruto es " + salario_bruto);
+        System.out.println("La retencion en la fuente es " + retencion);
+        System.out.println("El salario neto es " + salario_neto);
+        
+    }
+    
+}
